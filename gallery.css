@@ -1,0 +1,391 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf5e6;
+  color: #111;
+  overflow-x: visible;
+  margin: 0;
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url(https://64.media.tumblr.com/4de12a4576ea032818bc96bca3143923/6a03385469481121-43/s1280x1920/eedd35ea2c3dc8ddb9e2d8744505e117dfcb9749.pnj) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  max-width: 700px;
+  z-index: 2;
+}
+
+.byline {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.intro-text {
+  margin: 1rem 0 2rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 5rem 5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+/* NAVIGATION */
+nav {
+  background: #000;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #d1cfcf;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 1rem 0;
+  transition: 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d1cfcf;
+}
+
+
+.home-btn {
+  padding: 0.5rem 1rem;
+  background: #000000;
+  color: #000;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #e0e0e0;
+}
+
+.artist-works {
+  padding: 10rem 0rem;
+  text-align: center;
+  position: relative;
+  height: 0vh;
+  background: url(https://64.media.tumblr.com/5bfcf544ac65271964ecba39ad438c24/5bfd48510f8b8bf9-0e/s1280x1920/3056e784424abfa251eee0de9161da7e8d417be7.pnj) center/cover no-repeat;
+}
+
+.collective-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 15rem auto 3rem;
+  text-align: left;
+
+}
+
+.collective-line {
+  flex: 1;
+  height: 2px;
+  background-color: #111;
+  min-width: 100px;
+}
+
+.collective-text {
+  flex: 2;
+  max-width: 600px;
+}
+
+.collective-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.collective-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ===== WORKS ===== */
+.carousel {
+  max-width: 900px;
+  margin: 3rem auto;
+  overflow-x: auto;
+  display: flex;
+  gap: 1rem;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 50px;
+  width: 20px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #ffd364;
+  border-radius: 500px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: #bc841c;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.slide {
+  flex: 0 0 50%;
+  scroll-snap-align: center;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0%;
+}
+
+.slide img {
+  width: 80%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
+
+.about-section {
+  background-color: #fdf5e6;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-section h2 {
+  background-image: url(https://64.media.tumblr.com/4de12a4576ea032818bc96bca3143923/6a03385469481121-43/s1280x1920/eedd35ea2c3dc8ddb9e2d8744505e117dfcb9749.pnj) center / cover no-repeat;
+  padding: 10rem 0rem;
+  text-align: center;
+  height: 0vh;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+/* Rows */
+.about-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+/* Reverse layout for alternating sides */
+.about-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text block */
+.about-text {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: left;
+}
+
+.about-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Image block */
+.about-img {
+  padding: 10rem 0rem;
+  text-align: center;
+  position: relative;
+  height: 0vh;
+  background: url(https://64.media.tumblr.com/5bfcf544ac65271964ecba39ad438c24/5bfd48510f8b8bf9-0e/s1280x1920/3056e784424abfa251eee0de9161da7e8d417be7.pnj) center/cover no-repeat;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 30px;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+.member.reverse {
+  flex-direction: 2;
+  text-align: left;
+}
+
+.member img {
+  width: 300px;
+  height:300px;
+}
+
+.member-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.member-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+
+.member-text p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  bottom: -90px;
+  left: 0;
+  background-color: #a97d27;
+  color: white;
+  padding: 20px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  border-radius: 0px 100px 0px;
+}
+
+.footer-content p {
+  font-family: 'Poppins', sans-serif;
+  margin: center;
+  align-items: center;
+  flex: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .art-row {
+    flex-direction: column;
+  }
+  .slide img {
+    height: 300px;
+  }
+  .about-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  
+}
