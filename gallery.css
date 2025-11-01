@@ -278,11 +278,11 @@ body {
 }
 
 .about-row:nth-of-type(1) .about-photo {
-  background-image: url("../WEBDEVPORTFOLIO/resources/darelle.jpg");
+  background-image: url("https://github.com/09256781216gesef-cpu/WEBDEVPORTFOLIO/blob/main/resources/darelle.jpg");
 }
 
 .about-row:nth-of-type(2) .about-photo {
-  background-image: url("../WEBDEVPORTFOLIO/resources/gesef.jpg");
+  background-image: url("https://github.com/09256781216gesef-cpu/WEBDEVPORTFOLIO/blob/main/resources/gesef.jpg");
 }
 
 .about-row:nth-of-type(3) .about-photo {
@@ -391,4 +391,5 @@ footer {
     gap: 100px;
   }
 }
+
 
