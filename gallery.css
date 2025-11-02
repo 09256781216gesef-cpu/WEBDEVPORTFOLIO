@@ -278,15 +278,15 @@ body {
 }
 
 .about-row:nth-of-type(1) .about-photo {
-  background-image: url("https://github.com/09256781216gesef-cpu/WEBDEVPORTFOLIO/blob/main/resources/darelle.jpg");
+  background-image: url("https://64.media.tumblr.com/fd37534459acebcab0cf30e828a30212/e190d2ff34c6c941-7d/s400x600/f3eb533d6dc012edef72718e79c6786eb3649e6e.jpg");
 }
 
 .about-row:nth-of-type(2) .about-photo {
-  background-image: url("https://github.com/09256781216gesef-cpu/WEBDEVPORTFOLIO/blob/main/resources/gesef.jpg");
+  background-image: url("https://64.media.tumblr.com/15e816d0a83fe33db4f58b340a54c7e5/e190d2ff34c6c941-8b/s400x600/af8a8396fa30af18a338cee3c1142d8d79aa3215.jpg");
 }
 
 .about-row:nth-of-type(3) .about-photo {
-  background-image: url("https://64.media.tumblr.com/fc802fbe86ab338f3cba9cd827b1f83e/d270fa5fa544bd33-77/s1280x1920/6d150c89ab58b5d17ed39238e804ee7f207900db.pnj");
+  background-image: url("https://64.media.tumblr.com/9c718405d7171c86d665891b2b0fc59d/e190d2ff34c6c941-cc/s640x960/6b7fe383260aa7f43f99aad2e1b629478aa3a571.pnj");
 }
 
 .about-photo:hover {
@@ -391,5 +391,6 @@ footer {
     gap: 100px;
   }
 }
+
 
 
